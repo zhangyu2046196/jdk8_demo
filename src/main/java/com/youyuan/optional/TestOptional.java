@@ -76,6 +76,8 @@ public class TestOptional {
             System.out.println(op.get());
         }
 
+        op=Optional.ofNullable(null);
+
         Employee emp = op.orElse(new Employee("AA",20,19.2));
         System.out.println(emp);
 
